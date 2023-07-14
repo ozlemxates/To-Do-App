@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Comfortaa', cursive;;
 }
 
 body{
@@ -30,7 +31,7 @@ h1 {
     justify-content: space-between;
     background: #80808047;
     align-items: center;
-    border-radius: 22px;
+    border-radius: 29px;
     cursor:text;
 }
 
@@ -76,13 +77,18 @@ li::before {
     width: 20px;
     height: 20px;
     position: absolute;
-   
     left: 10px;
     border-radius: 50%;
     box-shadow: 0 0 0 2px #2d417f96;
 
 }
 
-content: "";
- 
-  border-radius: 50%background-color: red;
+.checked {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.checked::before {
+    background-color: #5a1674;
+    box-shadow: 0 0 0 2px #5a1674;
+}
