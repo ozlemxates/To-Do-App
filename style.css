@@ -22,6 +22,7 @@ main{
 h1 {
     color: #2d417f;
     margin: 20px 0;
+    cursor: default;
 }
 
 .bar {
@@ -30,6 +31,7 @@ h1 {
     background: #80808047;
     align-items: center;
     border-radius: 22px;
+    cursor:text;
 }
 
 form{
@@ -42,6 +44,7 @@ input {
     outline: none;
     border: none;
     background: none;
+    font-size: 1em;
 }
 
 button {
@@ -51,4 +54,35 @@ button {
     padding: 15px 30px;
     color: white;
     border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
 }
+
+ul {
+    margin: 20px 3px;
+}
+
+li{
+    cursor: pointer;
+    list-style: none;
+    font-size: 1.3em;
+    padding: 11px 38px;
+    user-select: none;
+    position: relative;
+}
+
+li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+   
+    left: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #2d417f96;
+
+}
+
+content: "";
+ 
+  border-radius: 50%background-color: red;
