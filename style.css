@@ -12,7 +12,7 @@ body{
 }
 
 main{
-    max-width: 700px;
+    max-width: 750px;
     margin: 200px auto;
     padding: 20px 30px;
     border-radius: 10px;
@@ -23,6 +23,7 @@ h1 {
     color: #2d417f;
     margin: 20px 0;
     cursor: default;
+    font-size: 2.2rem;
 }
 
 .bar {
@@ -40,7 +41,7 @@ form{
 }
 
 input {
-    min-width: 230px;
+    min-width: 295px;
     outline: none;
     border: none;
     background: none;
@@ -79,7 +80,6 @@ li::before {
     left: 10px;
     border-radius: 50%;
     box-shadow: 0 0 0 2px #2d417f96;
-
 }
 
 .checked {
@@ -91,3 +91,10 @@ li::before {
     background-color: #5a1674;
     box-shadow: 0 0 0 2px #5a1674;
 }
+
+@media (max-width: 437px) {
+    input {
+        min-width: 180px;
+    }  
+  }
+  
