@@ -6,6 +6,7 @@
 }
 
 body{
+    padding: 10px;
     width: 100%;
     min-height: 100vh;
     background: linear-gradient(#361444, rgb(0 7 255))
@@ -36,16 +37,17 @@ h1 {
 }
 
 form{
-    display: flex;
     padding: 13px;
 }
 
 input {
+    /* width: 12vw; */
     min-width: 295px;
     outline: none;
     border: none;
     background: none;
     font-size: 1em;
+    box-sizing: border-box;
 }
 
 button {
@@ -96,5 +98,5 @@ li::before {
     input {
         min-width: 180px;
     }  
-  }
+}
   
