@@ -12,7 +12,6 @@ body{
 }
 
 main{
-    width: 100%;
     max-width: 700px;
     margin: 200px auto;
     padding: 20px 30px;
@@ -52,7 +51,7 @@ button {
     outline: none;
     border: none;
     background:#5a1674;
-    padding: 15px 30px;
+    padding: 15px 21px;
     color: white;
     border-radius: 30px;
     cursor: pointer;
