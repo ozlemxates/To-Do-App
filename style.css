@@ -37,16 +37,17 @@ h1 {
 }
 
 form{
-    padding: 13px;
+    width: 100%;
 }
 
 input {
-    /* width: 12vw; */
+    width: 100%;
     min-width: 295px;
     outline: none;
     border: none;
     background: none;
     font-size: 1em;
+    padding: 13px;
     box-sizing: border-box;
 }
 
