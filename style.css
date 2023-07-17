@@ -50,6 +50,10 @@ input {
     box-sizing: border-box;
 }
 
+.border-red {
+    outline: 1px solid #5a1674;
+}
+
 button {
     outline: none;
     border: none;
