@@ -14,7 +14,11 @@ function newTask() {
         let barElement = document.getElementById("bar");
         barElement.classList.add("border-red");
         return;
-    } 
+    } else {
+        let barElement = document.getElementById("bar");
+        barElement.classList.remove("border-red");
+    }
+    
     
     taskList.appendChild(newListItem);
     taskInput.value = ""; 
