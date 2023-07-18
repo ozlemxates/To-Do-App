@@ -69,6 +69,17 @@ button:hover {
     background:#8c629c;
 }
 
+.list-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-button {
+    display: flex;
+    flex-direction: column;
+    background: none;
+}
+
 ul {
     margin: 20px 3px;
 }
@@ -90,6 +101,16 @@ li::before {
     left: 10px;
     border-radius: 50%;
     box-shadow: 0 0 0 2px #2d417f96;
+}
+
+.list-button button {
+    color: #878b87f7;
+    font-size: 0.8em;
+    background-color: transparent;
+}
+
+.list-button button:hover{
+    color: #494949f7;
 }
 
 .checked {
