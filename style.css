@@ -52,6 +52,9 @@ input {
 
 .border-red {
     outline: 1px solid #5a1674;
+}
+
+.shake {
     animation: shake 0.3s;
 }
 

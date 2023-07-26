@@ -36,7 +36,7 @@ function newTask() {
     taskInput.value = ""; 
 }
 
-// localStorage.setItem("name", "bob")
+// localStorage.setItem("name", "murat")
 // console.log(localStorage.getItem("name"))
 
 
