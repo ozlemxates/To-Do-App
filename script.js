@@ -17,6 +17,7 @@ function newTask() {
     if (task.trim() === "") {
         let barElement = document.getElementById("bar");
         barElement.classList.add("border-red");
+        barElement.classList.toggle("shake");
         return;
     } else {
         let barElement = document.getElementById("bar");
@@ -34,3 +35,9 @@ function newTask() {
     listButton.appendChild(newButton)
     taskInput.value = ""; 
 }
+
+// localStorage.setItem("name", "bob")
+// console.log(localStorage.getItem("name"))
+
+
+// document.cookie = 'name = Murat; expires=' + new Date (2023, 7, 26).toUTCString();
