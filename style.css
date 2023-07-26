@@ -52,6 +52,7 @@ input {
 
 .border-red {
     outline: 1px solid #5a1674;
+    animation: shake 0.3s;
 }
 
 button {
@@ -123,9 +124,29 @@ li::before {
     box-shadow: 0 0 0 2px #5a1674;
 }
 
+@keyframes shake {
+    10%, 90% {
+      transform: translateX(-5px);
+    }
+    
+    20%, 80% {
+      transform: translateX(5px);
+    }
+  
+    30%, 50%, 70% {
+      transform: translateX(-10px);
+    }
+  
+    40%, 60% {
+      transform: translateX(10px);
+    }
+}
+
 @media (max-width: 437px) {
     input {
         min-width: 180px;
     }  
 }
+
+
   
