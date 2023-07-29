@@ -1,3 +1,5 @@
+const taskArray = localStorage.getItem("task") ? JSON.parse(localStorage.getItem("task")) : []
+
 function newTask() {
     let taskInput = document.getElementById("box");
     let taskList = document.getElementById("list");
@@ -30,10 +32,16 @@ function newTask() {
         listItem.remove();
         this.remove();
     });
+
+    function createArray() {
+        taskArray.push(task)
+        localStorage.setItem("task", JSON.stringify(taskArray))
+    }
     
     taskList.appendChild(newListItem);
     listButton.appendChild(newButton)
     taskInput.value = ""; 
+    createArray()
 }
 
 // localStorage.setItem("name", "murat")
