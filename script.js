@@ -31,8 +31,10 @@ function newTask() {
         let listItem = taskList.children[index];
         listItem.remove();
         this.remove();
-        localStorage.removeItem("task", JSON.stringify(taskArray));
+        taskArray.splice(index, 1);
+        localStorage.setItem("task", JSON.stringify(taskArray));
     });
+    
 
     function createArray() {
         taskArray.push(task)
