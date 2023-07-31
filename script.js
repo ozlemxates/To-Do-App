@@ -31,6 +31,7 @@ function newTask() {
         let listItem = taskList.children[index];
         listItem.remove();
         this.remove();
+        localStorage.removeItem("task", JSON.stringify(taskArray));
     });
 
     function createArray() {
@@ -43,9 +44,3 @@ function newTask() {
     taskInput.value = ""; 
     createArray()
 }
-
-// localStorage.setItem("name", "murat")
-// console.log(localStorage.getItem("name"))
-
-
-// document.cookie = 'name = Murat; expires=' + new Date (2023, 7, 26).toUTCString();
