@@ -149,6 +149,11 @@ li::before {
     input {
         min-width: 180px;
     }  
+
+    li{
+        font-size: 1em;
+    }
+
 }
 
 
