@@ -24,7 +24,7 @@ function displayStorage() {
         });
 
         taskList.appendChild(newListItem);
-        listButton.appendChild(newButton);
+        listButton.appendChild(newButton); 
     });
 }
 
@@ -41,11 +41,11 @@ function newTask() {
         let barElement = document.getElementById("bar");
         barElement.classList.remove("border-red");
     } 
-
     
     taskArray.push(task)
     localStorage.setItem("task", JSON.stringify(taskArray))
     displayStorage();
+    location.reload()
     taskInput.value = ""; 
 }
 displayStorage();
